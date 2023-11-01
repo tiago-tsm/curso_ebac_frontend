@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="cadastroForm">
+        <div>
+            <h1>Formulario Js</h1>
+        </div>
+        <div>
+            <label for="a" name="a">Numero A </label>
+            <input type="number" id="a">
+        </div>
+        <label for="b" name="b">Numero B </label>
+        <input type="number" id="b">
+
+        </div>
+
+        <div><button type="submit" id="enviar">Enviar</button></div>
+
+
+    </form>
+
+
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener
+            ('submit', function (e) {
+                e.preventDefault();
+                const a = parseFloat(document.getElementById('a').value);
+                const b = parseFloat(document.getElementById('b').value);
+
+                if (b > a) {
+                    alert('Formulario VALIDO numero B maior que numero A')
+                } else {
+                    alert('Formulario INVALIDO numero B menor que numer A')
+                }
+
+
+            })
+    </script>
+
+</body>
+
+
+
+</html>
